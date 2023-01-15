@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{9c1d4f14-6236-40d2-8e16-a0ecc2f1c291}">
+		<property name="name">
+			<value>freq2</value>
+		</property>
+		<relationship name="folder">
+			<destination>{8b1f7eb9-96ec-4db7-bf7c-a5052baf906b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{1508574d-4630-48be-9fbc-8f6c09b7c18a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{1508574d-4630-48be-9fbc-8f6c09b7c18a}">
+		<property name="maximum">
+			<value>28</value>
+		</property>
+		<property name="initialValue">
+			<value>5</value>
+		</property>
+	</object>
+</objects>

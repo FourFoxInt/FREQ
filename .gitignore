@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-FREQ/[Ll]ibrary/
-FREQ/[Tt]emp/
-FREQ/[Oo]bj/
-FREQ/[Bb]uild/
-FREQ/[Bb]uilds/
-FREQ/[Ll]ogs/
-FREQ/[Uu]ser[Ss]ettings/
+FrEQ_Mobile/[Ll]ibrary/
+FrEQ_Mobile/[Tt]emp/
+FrEQ_Mobile/[Oo]bj/
+FrEQ_Mobile/[Bb]uild/
+FrEQ_Mobile/[Bb]uilds/
+FrEQ_Mobile/[Ll]ogs/
+FrEQ_Mobile/[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data

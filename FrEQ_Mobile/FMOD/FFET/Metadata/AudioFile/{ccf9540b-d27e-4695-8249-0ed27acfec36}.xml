@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{ccf9540b-d27e-4695-8249-0ed27acfec36}">
+		<property name="assetPath">
+			<value>Jazz.R.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>301.83004535147393</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{607b9917-9654-4e42-a07c-a86981d99d22}</destination>
+		</relationship>
+	</object>
+</objects>
