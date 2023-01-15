@@ -2420,7 +2420,7 @@ public class Listener : MonoBehaviour
     IEnumerator UpdateStats()
     {
         WWWForm form = new WWWForm();
-        form.AddField("userID", netGlbScr.userID.ToString());
+        form.AddField("userID", netGlbScr.username);
         form.AddField("userScore", netGlbScr.userScore);
         form.AddField("listenEx", netGlbScr.listenEx);
 

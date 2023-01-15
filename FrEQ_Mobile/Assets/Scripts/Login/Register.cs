@@ -188,4 +188,97 @@ public class Register : MonoBehaviour
         yield return new WaitForSeconds(3);
         statusText.gameObject.SetActive(false);
     }
+
+    public void EmailClick()
+    {
+        if (emailInput.text == "")
+        {
+            emailInput.placeholder.GetComponent<TextMeshProUGUI>().text = "";
+        }
+
+        if (usernameInput.text == "")
+        {
+            usernameInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Username";
+        }
+
+        if (passwordInput.text == "")
+        {
+            passwordInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Password";
+        }
+
+        if (passwordConfirmInput.text == "")
+        {
+            passwordConfirmInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Confirm password";
+        }
+    }
+
+    public void UsernameClick()
+    {
+        if (emailInput.text == "")
+        {
+            emailInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Email";
+        }
+
+        if (usernameInput.text == "")
+        {
+            usernameInput.placeholder.GetComponent<TextMeshProUGUI>().text = "";
+        }
+
+        if (passwordInput.text == "")
+        {
+            passwordInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Password";
+        }
+
+        if (passwordConfirmInput.text == "")
+        {
+            passwordConfirmInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Confirm password";
+        }
+    }
+
+    public void PasswordClick()
+    {
+        if (emailInput.text == "")
+        {
+            emailInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Email";
+        }
+
+        if (usernameInput.text == "")
+        {
+            usernameInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Username";
+        }
+
+        if (passwordInput.text == "")
+        {
+            passwordInput.placeholder.GetComponent<TextMeshProUGUI>().text = "";
+        }
+
+        if (passwordConfirmInput.text == "")
+        {
+            passwordConfirmInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Confirm password";
+        }
+    }
+
+    public void PasswordConfirmClick()
+    {
+        if (emailInput.text == "")
+        {
+            emailInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Email";
+        }
+
+        if (usernameInput.text == "")
+        {
+            usernameInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Username";
+        }
+
+        if (passwordInput.text == "")
+        {
+            passwordInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Password";
+        }
+
+        if (passwordConfirmInput.text == "")
+        {
+            passwordConfirmInput.placeholder.GetComponent<TextMeshProUGUI>().text = "";
+        }
+    }
+
 }

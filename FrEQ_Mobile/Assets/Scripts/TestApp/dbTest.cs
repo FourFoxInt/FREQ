@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -938,7 +938,7 @@ public class dbTest : MonoBehaviour
     IEnumerator PostResults()
     {
         WWWForm form = new WWWForm();
-        form.AddField("studentID", netGlbScr.userID.ToString());
+        form.AddField("studentID", netGlbScr.username);
         form.AddField("appTestID", glbScr.appTestID);
         form.AddField("score", score);
 
@@ -962,7 +962,7 @@ public class dbTest : MonoBehaviour
     IEnumerator UpdateStats()
     {
         WWWForm form = new WWWForm();
-        form.AddField("studentID", netGlbScr.userID.ToString());
+        form.AddField("studentID", netGlbScr.username);
         form.AddField("userScore", netGlbScr.userScore);
         form.AddField("tests", netGlbScr.tests);
         form.AddField("testLevel", netGlbScr.testLevel);

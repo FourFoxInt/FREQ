@@ -3053,7 +3053,7 @@ public class EqExam : MonoBehaviour
     IEnumerator PostResults()
     {
         WWWForm form = new WWWForm();
-        form.AddField("studentID", netGlbScr.userID.ToString());
+        form.AddField("studentID", netGlbScr.username);
         form.AddField("appTestID", glbScr.appTestID);
         form.AddField("score", score);
 

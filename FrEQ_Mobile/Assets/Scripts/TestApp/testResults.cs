@@ -312,6 +312,6 @@ public class testResults : MonoBehaviour
 
     public void HomeBtn()
     {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
     }
 }

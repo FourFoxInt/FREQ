@@ -958,7 +958,7 @@ public class DbExam : MonoBehaviour
     IEnumerator PostResults()
     {
         WWWForm form = new WWWForm();
-        form.AddField("studentID", netGlbScr.userID.ToString());
+        form.AddField("studentID", netGlbScr.username);
         form.AddField("appTestID", glbScr.appTestID);
         form.AddField("score", score);
 
@@ -982,7 +982,7 @@ public class DbExam : MonoBehaviour
     IEnumerator UpdateStats()
     {
         WWWForm form = new WWWForm();
-        form.AddField("studentID", netGlbScr.userID.ToString());
+        form.AddField("studentID", netGlbScr.username);
         form.AddField("userScore", netGlbScr.userScore);
         form.AddField("tests", netGlbScr.tests);
         form.AddField("testLevel", netGlbScr.testLevel);

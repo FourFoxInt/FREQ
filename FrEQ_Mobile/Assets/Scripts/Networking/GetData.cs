@@ -51,6 +51,12 @@ public class GetData : MonoBehaviour
     List<int> y2eqt22scores = new List<int>();
     List<int> y2eqt23scores = new List<int>();
     List<int> y2eqt24scores = new List<int>();
+    List<int> y2fxt1scores = new List<int>();
+    List<int> y2fxt2scores = new List<int>();
+    List<int> y2fxt3scores = new List<int>();
+    List<int> y2fxt4scores = new List<int>();
+    List<int> y2fxt5scores = new List<int>();
+    List<int> y2fxt6scores = new List<int>();
     List<int> y3eqt1scores = new List<int>();
     List<int> y3eqt2scores = new List<int>();
     List<int> y3eqt3scores = new List<int>();
@@ -149,279 +155,306 @@ public class GetData : MonoBehaviour
         {
             string[] userInfo = www.downloadHandler.text.Split('|');
             int x = 0;
-            int y = 1; ;
+            int y = 1;
             for (int i = 1; x < userInfo.Length; i++)
             {
                 string testID = userInfo[x];
                 //YEAR 1
-                if (testID == "Y1EQ_T1")
+                if (testID == "Y1EQ_T1" || testID == "M1_T1")
                 {
                     y1eqt1scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y1EQ_T2")
+                else if (testID == "Y1EQ_T2" || testID == "M1_T2")
                 {
                     y1eqt2scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y1EQ_T3")
+                else if (testID == "Y1EQ_T3" || testID == "M1_T3")
                 {
                     y1eqt3scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y1EQ_T4")
+                else if (testID == "Y1EQ_T4" || testID == "M1_T4")
                 {
                     y1eqt4scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y1EQ_T5")
+                else if (testID == "Y1EQ_T5" || testID == "M1_T5")
                 {
                     y1eqt5scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y1EQ_T6")
+                else if (testID == "Y1EQ_T6" || testID == "M1_T6")
                 {
                     y1eqt6scores.Add(int.Parse(userInfo[y]));
                 }
 
                 //YEAR 1 FX
 
-                else if (testID == "Y1FX_T1")
+                else if (testID == "Y1FX_T1" || testID == "M2_T1")
                 {
                     y1Fxt1scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y1FX_T2")
+                else if (testID == "Y1FX_T2" || testID == "M2_T2")
                 {
                     y1Fxt2scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y1FX_T3")
+                else if (testID == "Y1FX_T3" || testID == "M2_T3")
                 {
                     y1Fxt3scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y1FX_T4")
+                else if (testID == "Y1FX_T4" || testID == "M2_T4")
                 {
                     y1Fxt4scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y1FX_T5")
+                else if (testID == "Y1FX_T5" || testID == "M2_T5")
                 {
                     y1Fxt5scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y1FX_T6")
+                else if (testID == "Y1FX_T6" || testID == "M2_T6")
                 {
                     y1Fxt6scores.Add(int.Parse(userInfo[y]));
                 }
 
 
                 //YEAR 2
-                else if (testID == "Y2EQ_T1")
+                else if (testID == "Y2EQ_T1" || testID == "M3_T1")
                 {
                     y2eqt1scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T2")
+                else if (testID == "Y2EQ_T2" || testID == "M3_T2")
                 {
                     y2eqt2scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T3")
+                else if (testID == "Y2EQ_T3" || testID == "M3_T3")
                 {
                     y2eqt3scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T4")
+                else if (testID == "Y2EQ_T4" || testID == "M3_T4")
                 {
                     y2eqt4scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T5")
+                else if (testID == "Y2EQ_T5" || testID == "M3_T5")
                 {
                     y2eqt5scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T6")
+                else if (testID == "Y2EQ_T6" || testID == "M3_T6")
                 {
                     y2eqt6scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T7")
+                else if (testID == "Y2EQ_T7" || testID == "M3_T7")
                 {
                     y2eqt7scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T8")
+                else if (testID == "Y2EQ_T8" || testID == "M3_T8")
                 {
                     y2eqt8scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T9")
+                else if (testID == "Y2EQ_T9" || testID == "M3_T9")
                 {
                     y2eqt9scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T10")
+                else if (testID == "Y2EQ_T10" || testID == "M3_T10")
                 {
                     y2eqt10scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T11")
+                else if (testID == "Y2EQ_T11" || testID == "M3_T11")
                 {
                     y2eqt11scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T12")
+                else if (testID == "Y2EQ_T12" || testID == "M3_T12")
                 {
                     y2eqt12scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T13")
+                else if (testID == "Y2EQ_T13" || testID == "M3_T13")
                 {
                     y2eqt13scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T14")
+                else if (testID == "Y2EQ_T14" || testID == "M3_T14")
                 {
                     y2eqt14scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T15")
+                else if (testID == "Y2EQ_T15" || testID == "M3_T15")
                 {
                     y2eqt15scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T16")
+                else if (testID == "Y2EQ_T16" || testID == "M3_T16")
                 {
                     y2eqt16scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T17")
+                else if (testID == "Y2EQ_T17" || testID == "M3_T17")
                 {
                     y2eqt17scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T18")
+                else if (testID == "Y2EQ_T18" || testID == "M3_T18")
                 {
                     y2eqt18scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T19")
+                else if (testID == "Y2EQ_T19" || testID == "M3_T19")
                 {
                     y2eqt19scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T20")
+                else if (testID == "Y2EQ_T20" || testID == "M3_T20")
                 {
                     y2eqt20scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T21")
+                else if (testID == "Y2EQ_T21" || testID == "M3_T21")
                 {
                     y2eqt21scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T22")
+                else if (testID == "Y2EQ_T22" || testID == "M3_T22")
                 {
                     y2eqt22scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T23")
+                else if (testID == "Y2EQ_T23" || testID == "M3_T23")
                 {
                     y2eqt23scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y2EQ_T24")
+                else if (testID == "Y2EQ_T24" || testID == "M3_T24")
                 {
                     y2eqt24scores.Add(int.Parse(userInfo[y]));
                 }
+
+                //Year2 FX
+                else if (testID == "Y2FX_T1" || testID == "M4_T1")
+                {
+                    y2fxt1scores.Add(int.Parse(userInfo[y]));
+                }
+                else if (testID == "Y2FX_T2" || testID == "M4_T2")
+                {
+                    y2fxt2scores.Add(int.Parse(userInfo[y]));
+                }
+                else if (testID == "Y2FX_T3" || testID == "M4_T3")
+                {
+                    y2fxt3scores.Add(int.Parse(userInfo[y]));
+                }
+                else if (testID == "Y2FX_T4" || testID == "M4_T4")
+                {
+                    y2fxt4scores.Add(int.Parse(userInfo[y]));
+                }
+                else if (testID == "Y2FX_T5" || testID == "M4_T5")
+                {
+                    y2fxt5scores.Add(int.Parse(userInfo[y]));
+                }
+                else if (testID == "Y2FX_T6" || testID == "M4_T6")
+                {
+                    y2fxt6scores.Add(int.Parse(userInfo[y]));
+                }
+
                 //YEAR 3
-                else if (testID == "Y3EQ_T1")
+                else if (testID == "Y3EQ_T1" || testID == "M5_T1")
                 {
                     y3eqt1scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T2")
+                else if (testID == "Y3EQ_T2" || testID == "M5_T2")
                 {
                     y3eqt2scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T3")
+                else if (testID == "Y3EQ_T3" || testID == "M5_T3")
                 {
                     y3eqt3scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T4")
+                else if (testID == "Y3EQ_T4" || testID == "M5_T4")
                 {
                     y3eqt4scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T5")
+                else if (testID == "Y3EQ_T5" || testID == "M5_T5")
                 {
                     y3eqt5scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T6")
+                else if (testID == "Y3EQ_T6" || testID == "M5_T6")
                 {
                     y3eqt6scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T7")
+                else if (testID == "Y3EQ_T7" || testID == "M5_T7")
                 {
                     y3eqt7scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T8")
+                else if (testID == "Y3EQ_T8" || testID == "M5_T8")
                 {
                     y3eqt8scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T9")
+                else if (testID == "Y3EQ_T9" || testID == "M5_T9")
                 {
                     y3eqt9scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T10")
+                else if (testID == "Y3EQ_T10" || testID == "M5_T10")
                 {
                     y3eqt10scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T11")
+                else if (testID == "Y3EQ_T11" || testID == "M5_T11")
                 {
                     y3eqt11scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T12")
+                else if (testID == "Y3EQ_T12" || testID == "M5_T12")
                 {
                     y3eqt12scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T13")
+                else if (testID == "Y3EQ_T13" || testID == "M5_T13")
                 {
                     y3eqt13scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T14")
+                else if (testID == "Y3EQ_T14" || testID == "M5_T14")
                 {
                     y3eqt14scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T15")
+                else if (testID == "Y3EQ_T15" || testID == "M5_T15")
                 {
                     y3eqt15scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T16")
+                else if (testID == "Y3EQ_T16" || testID == "M5_T16")
                 {
                     y3eqt16scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T17")
+                else if (testID == "Y3EQ_T17" || testID == "M5_T17")
                 {
                     y3eqt17scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T18")
+                else if (testID == "Y3EQ_T18" || testID == "M5_T18")
                 {
                     y3eqt18scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T19")
+                else if (testID == "Y3EQ_T19" || testID == "M5_T19")
                 {
                     y3eqt19scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T20")
+                else if (testID == "Y3EQ_T20" || testID == "M5_T20")
                 {
                     y3eqt20scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T21")
+                else if (testID == "Y3EQ_T21" || testID == "M5_T21")
                 {
                     y3eqt21scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T22")
+                else if (testID == "Y3EQ_T22" || testID == "M5_T22")
                 {
                     y3eqt22scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T23")
+                else if (testID == "Y3EQ_T23" || testID == "M5_T23")
                 {
                     y3eqt23scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQ_T24")
+                else if (testID == "Y3EQ_T24" || testID == "M5_T24")
                 {
                     y3eqt24scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQDB_T1")
+                else if (testID == "Y3EQDB_T1" || testID == "M6_T1")
                 {
                     y3eqdbt1scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQDB_T2")
+                else if (testID == "Y3EQDB_T2" || testID == "M6_T2")
                 {
                     y3eqdbt2scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQDB_T3")
+                else if (testID == "Y3EQDB_T3" || testID == "M6_T3")
                 {
                     y3eqdbt3scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQDB_T4")
+                else if (testID == "Y3EQDB_T4" || testID == "M6_T4")
                 {
                     y3eqdbt4scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQDB_T5")
+                else if (testID == "Y3EQDB_T5" || testID == "M6_T5")
                 {
                     y3eqdbt5scores.Add(int.Parse(userInfo[y]));
                 }
-                else if (testID == "Y3EQDB_T6")
+                else if (testID == "Y3EQDB_T6" || testID == "M6_T6")
                 {
                     y3eqdbt6scores.Add(int.Parse(userInfo[y]));
                 }
@@ -646,308 +679,308 @@ public class GetData : MonoBehaviour
     {
         if (glbScr.M1EQ_T1_Score == 0)
         {
-            glbScr.currentEqMod = "M1_L1";glbScr.currentEqTitle = "Beginner Frequencies.";
+            glbScr.currentEqMod = "M1_L1"; glbScr.currentEqTitle = "Beginner Frequencies.";
             return;
         }
         if (glbScr.M1EQ_T2_Score == 0)
         {
-            glbScr.currentEqMod = "M1_L2";glbScr.currentEqTitle = "Beginner Frequencies.";
+            glbScr.currentEqMod = "M1_L2"; glbScr.currentEqTitle = "Beginner Frequencies.";
             return;
         }
         if (glbScr.M1EQ_T3_Score == 0)
         {
-            glbScr.currentEqMod = "M1_L3";glbScr.currentEqTitle = "Beginner Frequencies.";
+            glbScr.currentEqMod = "M1_L3"; glbScr.currentEqTitle = "Beginner Frequencies.";
             return;
         }
         if (glbScr.M1EQ_T4_Score == 0)
         {
-            glbScr.currentEqMod = "M1_L4";glbScr.currentEqTitle = "Beginner Frequencies.";
+            glbScr.currentEqMod = "M1_L4"; glbScr.currentEqTitle = "Beginner Frequencies.";
             return;
         }
         if (glbScr.M1EQ_T5_Score == 0)
         {
-            glbScr.currentEqMod = "M1_L5";glbScr.currentEqTitle = "Beginner Frequencies.";
+            glbScr.currentEqMod = "M1_L5"; glbScr.currentEqTitle = "Beginner Frequencies.";
             return;
         }
         if (glbScr.M1EQ_T6_Score == 0)
         {
-            glbScr.currentEqMod = "M1_L6";glbScr.currentEqTitle = "Beginner Frequencies.";
+            glbScr.currentEqMod = "M1_L6"; glbScr.currentEqTitle = "Beginner Frequencies.";
             return;
         }
 
 
         if (glbScr.M3EQ_T1_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L1";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L1"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T2_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L2";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L2"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T3_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L3";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L3"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T4_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L4";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L4"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T5_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L5";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L5"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T6_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L6";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L6"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T7_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L7";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L7"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T8_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L8";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L8"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T9_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L9";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L9"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T10_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L10";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L10"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T11_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L11";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L11"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T12_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L12";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L12"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T13_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L13";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L13"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T14_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L14";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L14"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T15_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L15";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L15"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T16_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L16";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L16"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T17_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L17";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L17"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T18_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L18";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L18"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T19_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L19";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L19"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T20_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L20";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L20"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T21_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L21";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L21"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T22_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L22";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L22"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T23_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L23";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L23"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
         if (glbScr.M3EQ_T24_Score == 0)
         {
-            glbScr.currentEqMod = "M3_L24";glbScr.currentEqTitle = "Ten Band Frequencies.";
+            glbScr.currentEqMod = "M3_L24"; glbScr.currentEqTitle = "Ten Band Frequencies.";
             return;
         }
 
 
         if (glbScr.M5EQ_T1_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L1";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L1"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T2_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L2";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L2"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T3_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L3";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L3"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T4_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L4";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L4"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T5_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L5";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L5"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T6_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L6";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L6"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T7_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L7";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L7"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T8_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L8";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L8"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T9_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L9";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L9"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T10_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L10";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L10"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T11_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L11";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L11"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T12_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L12";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L12"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T13_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L13";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L13"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T14_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L14";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L14"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T15_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L15";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L15"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T16_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L16";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L16"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T17_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L17";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L17"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T18_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L18";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L18"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T19_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L19";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L19"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T20_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L20";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L20"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T21_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L21";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L21"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T22_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L22";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L22"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T23_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L23";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L23"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
         if (glbScr.M5EQ_T24_Score == 0)
         {
-            glbScr.currentEqMod = "M5_L24";glbScr.currentEqTitle = "28 Band Frequencies.";
+            glbScr.currentEqMod = "M5_L24"; glbScr.currentEqTitle = "28 Band Frequencies.";
             return;
         }
 
 
         if (glbScr.M6EQDB_T1_Score == 0)
         {
-            glbScr.currentEqMod = "M6_L1";glbScr.currentEqTitle = "Dual Band Frequencies.";
+            glbScr.currentEqMod = "M6_L1"; glbScr.currentEqTitle = "Dual Band Frequencies.";
             return;
         }
         if (glbScr.M6EQDB_T2_Score == 0)
         {
-            glbScr.currentEqMod = "M6_L2";glbScr.currentEqTitle = "Dual Band Frequencies.";
+            glbScr.currentEqMod = "M6_L2"; glbScr.currentEqTitle = "Dual Band Frequencies.";
             return;
         }
         if (glbScr.M6EQDB_T3_Score == 0)
         {
-            glbScr.currentEqMod = "M6_L3";glbScr.currentEqTitle = "Dual Band Frequencies.";
+            glbScr.currentEqMod = "M6_L3"; glbScr.currentEqTitle = "Dual Band Frequencies.";
             return;
         }
         if (glbScr.M6EQDB_T4_Score == 0)
         {
-            glbScr.currentEqMod = "M6_L4";glbScr.currentEqTitle = "Dual Band Frequencies.";
+            glbScr.currentEqMod = "M6_L4"; glbScr.currentEqTitle = "Dual Band Frequencies.";
             return;
         }
         if (glbScr.M6EQDB_T5_Score == 0)
         {
-            glbScr.currentEqMod = "M6_L5";glbScr.currentEqTitle = "Dual Band Frequencies.";
+            glbScr.currentEqMod = "M6_L5"; glbScr.currentEqTitle = "Dual Band Frequencies.";
             return;
         }
         if (glbScr.M6EQDB_T6_Score == 0)
         {
-            glbScr.currentEqMod = "M6_L6";glbScr.currentEqTitle = "Dual Band Frequencies.";
+            glbScr.currentEqMod = "M6_L6"; glbScr.currentEqTitle = "Dual Band Frequencies.";
             return;
         }
     }

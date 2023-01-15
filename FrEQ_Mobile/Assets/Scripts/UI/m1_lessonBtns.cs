@@ -28,7 +28,7 @@ public class m1_lessonBtns : MonoBehaviour
         glbScr.currentTitle = "";
         glbScr.currentDesc = "";
         PlayerPrefs.SetInt("lastScene", SceneManager.GetActiveScene().buildIndex);
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(13);
     }
     public void m1_l1_Click()
     {

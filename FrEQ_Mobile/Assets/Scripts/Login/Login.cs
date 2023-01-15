@@ -126,6 +126,32 @@ public class Login : MonoBehaviour
         passwordInputText = passwordInput.text;
     }
 
+    public void UsernameClick()
+    {
+        if (usernameInput.text == "")
+        {
+            usernameInput.placeholder.GetComponent<TextMeshProUGUI>().text = "";
+        }
+
+        if (passwordInput.text == "")
+        {
+            passwordInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Password";
+        }
+    }
+
+    public void PasswordClick()
+    {
+        if (passwordInput.text == "")
+        {
+            passwordInput.placeholder.GetComponent<TextMeshProUGUI>().text = "";
+        }
+
+        if (usernameInput.text == "")
+        {
+            usernameInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Username";
+        }
+    }
+
     void ErrorText(string error)
     {
         loadingImage.SetActive(false);
