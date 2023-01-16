@@ -827,7 +827,7 @@ public class MainMenuUI : MonoBehaviour
 
     void CurrentFxClick_M2()
     {
-        switch (glbScr.currentEqMod)
+        switch (glbScr.currentFxMod)
         {
             case "M2_L1":
                 glbScr.lessonID = "M2_L1";

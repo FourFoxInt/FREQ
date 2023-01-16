@@ -61,9 +61,7 @@ public class EqExam : MonoBehaviour
     [SerializeField] private TextMeshProUGUI playBtnText;
     [SerializeField] private Button playBtn;
     public string title;
-    public string desc;
     [SerializeField] private TextMeshProUGUI titleText;
-    [SerializeField] private TextMeshProUGUI descText;
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI previousText;
     [SerializeField] private TextMeshProUGUI playText;
@@ -159,8 +157,6 @@ public class EqExam : MonoBehaviour
         MusicDropdownActivation();
 
         titleText.text = title;
-        descText.text = desc;
-
     }
     private void Update()
     {
@@ -206,7 +202,6 @@ public class EqExam : MonoBehaviour
             curAnsString = ranFreqString;
         }
         titleText.text = title;
-        descText.text = desc;
 
         if (Input.GetKeyDown(KeyCode.I))
         {

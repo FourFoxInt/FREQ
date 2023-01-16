@@ -614,63 +614,63 @@ public class GetData : MonoBehaviour
     {
         if (glbScr.M2FX_T1_Score == 0)
         {
-            glbScr.currentFxMod = "M2_L1";
+            glbScr.currentFxMod = "M2_L1"; glbScr.currentFxTitle = "Effects Training 1.";
             return;
         }
         if (glbScr.M2FX_T2_Score == 0)
         {
-            glbScr.currentFxMod = "M2_L2";
+            glbScr.currentFxMod = "M2_L2";glbScr.currentFxTitle = "Effects Training 1.";
             return;
         }
         if (glbScr.M2FX_T3_Score == 0)
         {
-            glbScr.currentFxMod = "M2_L3";
+            glbScr.currentFxMod = "M2_L3";glbScr.currentFxTitle = "Effects Training 1.";
             return;
         }
         if (glbScr.M2FX_T4_Score == 0)
         {
-            glbScr.currentFxMod = "M2_L4";
+            glbScr.currentFxMod = "M2_L4";glbScr.currentFxTitle = "Effects Training 1.";
             return;
         }
         if (glbScr.M2FX_T5_Score == 0)
         {
-            glbScr.currentFxMod = "M2_L5";
+            glbScr.currentFxMod = "M2_L5";glbScr.currentFxTitle = "Effects Training 1.";
             return;
         }
         if (glbScr.M2FX_T6_Score == 0)
         {
-            glbScr.currentFxMod = "M2_L6";
+            glbScr.currentFxMod = "M2_L6";glbScr.currentFxTitle = "Effects Training 1.";
             return;
         }
 
         if (glbScr.M4FX_T1_Score == 0)
         {
-            glbScr.currentFxMod = "M4_L1";
+            glbScr.currentFxMod = "M4_L1";glbScr.currentFxTitle = "Effects Training 2.";
             return;
         }
         if (glbScr.M4FX_T2_Score == 0)
         {
-            glbScr.currentFxMod = "M4_L2";
+            glbScr.currentFxMod = "M4_L2";glbScr.currentFxTitle = "Effects Training 2.";
             return;
         }
         if (glbScr.M4FX_T3_Score == 0)
         {
-            glbScr.currentFxMod = "M4_L3";
+            glbScr.currentFxMod = "M4_L3";glbScr.currentFxTitle = "Effects Training 2.";
             return;
         }
         if (glbScr.M4FX_T4_Score == 0)
         {
-            glbScr.currentFxMod = "M4_L4";
+            glbScr.currentFxMod = "M4_L4";glbScr.currentFxTitle = "Effects Training 2.";
             return;
         }
         if (glbScr.M4FX_T5_Score == 0)
         {
-            glbScr.currentFxMod = "M4_L5";
+            glbScr.currentFxMod = "M4_L5";glbScr.currentFxTitle = "Effects Training 2.";
             return;
         }
         if (glbScr.M4FX_T6_Score == 0)
         {
-            glbScr.currentFxMod = "M4_L6";
+            glbScr.currentFxMod = "M4_L6";glbScr.currentFxTitle = "Effects Training 2.";
             return;
         }
     }

@@ -55,9 +55,7 @@ public class FxExam : MonoBehaviour
     [SerializeField] private TextMeshProUGUI playBtnText;
     [SerializeField] private Button playBtn;
     public string title;
-    public string desc;
     [SerializeField] private TextMeshProUGUI titleText;
-    [SerializeField] private TextMeshProUGUI descText;
     [SerializeField] private TextMeshProUGUI playText;
     public int curEx = 1;
     [SerializeField] private GameObject closeTestCanvas;
@@ -128,7 +126,6 @@ public class FxExam : MonoBehaviour
         MusicDropdownActivation();
 
         titleText.text = title;
-        descText.text = desc;
 
         RandomiseEx();
     }
@@ -165,7 +162,6 @@ public class FxExam : MonoBehaviour
         }
 
         titleText.text = title;
-        descText.text = desc;
 
         if (!cut)
         {

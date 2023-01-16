@@ -53,9 +53,7 @@ public class DbExam : MonoBehaviour
     [SerializeField] private Button playBtn;
     [SerializeField] private Button submitBtn;
     public string title;
-    public string desc;
     [SerializeField] private TextMeshProUGUI titleText;
-    [SerializeField] private TextMeshProUGUI descText;
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI playText;
     public int curEx = 1;
@@ -200,8 +198,6 @@ public class DbExam : MonoBehaviour
         ButtonActivations();
 
         titleText.text = title;
-        descText.text = desc;
-
     }
     private void Update()
     {
@@ -249,7 +245,6 @@ public class DbExam : MonoBehaviour
         }
 
         titleText.text = title;
-        descText.text = desc;
 
         if (Input.GetKeyDown(KeyCode.I))
         {
