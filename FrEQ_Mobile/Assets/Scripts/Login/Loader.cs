@@ -10,6 +10,17 @@ public class Loader : MonoBehaviour
 
     private void Start()
     {
+        if(PlayerPrefs.HasKey("hadAudioWarning")){
+            if(PlayerPrefs.GetInt("hadAudioWarning") == 0){
+                FindObjectOfType<Globals>().hasHadWarning = false;
+            }else if(PlayerPrefs.GetInt("hadAudioWarning") == 1){
+                FindObjectOfType<Globals>().hasHadWarning = true;
+            }
+        }
+
+        if(PlayerPrefs.HasKey("MasterVolume")){
+            FindObjectOfType<Globals>().masterVolume = PlayerPrefs.GetFloat("MasterVolume");
+        }
         StartCoroutine(LoadLogin());
     }
 

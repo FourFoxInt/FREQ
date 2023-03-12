@@ -24,6 +24,7 @@ public class Register : MonoBehaviour
     [SerializeField] private Button registerBtn;
     [SerializeField] TextMeshProUGUI statusText;
     private string[] badWords;
+    public int inputFocus = 0;
 
     private void Awake()
     {
@@ -36,6 +37,7 @@ public class Register : MonoBehaviour
     private void Update()
     {
         VerifyInputs();
+        //HandleInputs();
     }
 
     public void UsernameInput()
@@ -191,6 +193,7 @@ public class Register : MonoBehaviour
 
     public void EmailClick()
     {
+        inputFocus = 1;
         if (emailInput.text == "")
         {
             emailInput.placeholder.GetComponent<TextMeshProUGUI>().text = "";
@@ -214,6 +217,7 @@ public class Register : MonoBehaviour
 
     public void UsernameClick()
     {
+        inputFocus = 0;
         if (emailInput.text == "")
         {
             emailInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Email";
@@ -237,6 +241,7 @@ public class Register : MonoBehaviour
 
     public void PasswordClick()
     {
+        inputFocus = 2;
         if (emailInput.text == "")
         {
             emailInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Email";
@@ -260,6 +265,7 @@ public class Register : MonoBehaviour
 
     public void PasswordConfirmClick()
     {
+        inputFocus = 3;
         if (emailInput.text == "")
         {
             emailInput.placeholder.GetComponent<TextMeshProUGUI>().text = "Email";
@@ -281,4 +287,54 @@ public class Register : MonoBehaviour
         }
     }
 
+    void HandleInputs()
+    {
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            inputFocus++;
+            if (inputFocus >= 4)
+            {
+                inputFocus = 0;
+            }
+            switch (inputFocus)
+            {
+                case 0:
+                    usernameInput.Select();
+                    break;
+                case 1:
+                    emailInput.Select();
+                    break;
+                case 2:
+                    passwordInput.Select();
+                    break;
+                case 3:
+                    passwordConfirmInput.Select();
+                    break;
+            }
+        }
+
+        /* if (Input.GetKeyDown(KeyCode.Tab) && Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            inputFocus--;
+            if (inputFocus < 0)
+            {
+                inputFocus = 4;
+            }
+            switch (inputFocus)
+            {
+                case 0:
+                    usernameInput.Select();
+                    break;
+                case 1:
+                    emailInput.Select();
+                    break;
+                case 2:
+                    passwordInput.Select();
+                    break;
+                case 3:
+                    passwordConfirmInput.Select();
+                    break;
+            }
+        } */
+    }
 }

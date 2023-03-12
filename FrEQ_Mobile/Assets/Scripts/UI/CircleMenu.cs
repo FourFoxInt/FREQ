@@ -115,7 +115,6 @@ public class CircleMenu : MonoBehaviour
 
     }
 
-
     /////
     //Settings
     ////
@@ -123,5 +122,11 @@ public class CircleMenu : MonoBehaviour
     {
         globals.masterVolume = masterVolSlider.value;
         masterBus.setVolume(globals.masterVolume);
+        PlayerPrefs.SetFloat("MasterVolume", globals.masterVolume);
+    }
+
+    public void HomeBtn()
+    {
+        SceneManager.LoadScene(3);
     }
 }

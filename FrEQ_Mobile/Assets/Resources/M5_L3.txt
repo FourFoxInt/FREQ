@@ -1,0 +1,13 @@
+Module Five: Lesson Three|Bottom 10 bands cut or boosted with Pink Noise.|Welcome to the first of many test sections that you will be required to complete before progressing in this course.  Each section consists of a listening program, a practice program, and finally the test program.
+
+The listening program lets you select the frequency you want to hear and you can listen to it as many times as you need to. Its recommended to write down notes about what each frequency reminds you of. For example, a 500Hz boost with pink noise is like the sound inside a car on a highway.
+
+The practice program will play you random examples of each frequency that will be in the test. You can do as many as you want and you will get a result immediately after each example. This will give you a good idea of if you are ready to try a test. 
+
+The test is 10 random examples only played twice. This is to test how well you can quickly identify different frequencies through certain ranges. As you progress these ranges will get wider. And once you have mastered pink noise, you will be introduced to identifying frequency changes in music. This is more difficult, so it pays to get a good foundation using pink noise.|Listening App|The first test is the beginning frequencies (80Hz, 2kHz, or 8kHz) boosted by 12dB. Using pink noise for each example.
+
+Use the program below to listen to how each frequency sounds.|Practice App|Use the program below to practice exercises that will be used in the test.
+
+Click the play button and then select the frequency you think is boosted by 12dB in the list of possible answers.|Test App|Use the program below to run your first test.
+
+Click the play button to begin. At the end of 10 examples, you will get your score and a list of what the correct answers were. You need to get at least 7 out of 10 correct to unlock the next module.

@@ -27,6 +27,7 @@ public class Login : MonoBehaviour
     [SerializeField] private GameObject loadingImage;
     [SerializeField] private GameObject errorBkg;
     public TextMeshProUGUI errorText;
+    public int inputFocus = 0;
 
     void Start()
     {
@@ -56,6 +57,7 @@ public class Login : MonoBehaviour
             SceneManager.LoadScene(2);
             loadingImage.SetActive(false);
         }
+        //HandleInputs();
     }
     public void VerifyInputs()
     {
@@ -128,6 +130,7 @@ public class Login : MonoBehaviour
 
     public void UsernameClick()
     {
+        inputFocus = 0;
         if (usernameInput.text == "")
         {
             usernameInput.placeholder.GetComponent<TextMeshProUGUI>().text = "";
@@ -141,6 +144,7 @@ public class Login : MonoBehaviour
 
     public void PasswordClick()
     {
+        inputFocus = 1;
         if (passwordInput.text == "")
         {
             passwordInput.placeholder.GetComponent<TextMeshProUGUI>().text = "";
@@ -172,5 +176,44 @@ public class Login : MonoBehaviour
     public void ClearError()
     {
         errorBkg.SetActive(false);
+    }
+
+    void HandleInputs()
+    {
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            inputFocus++;
+            if (inputFocus >= 2)
+            {
+                inputFocus = 0;
+            }
+            switch (inputFocus)
+            {
+                case 0:
+                    usernameInput.Select();
+                    break;
+                case 1:
+                    passwordInput.Select();
+                    break;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Tab) && Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            inputFocus--;
+            if (inputFocus < 0)
+            {
+                inputFocus = 1; 
+            }
+            switch (inputFocus)
+            {
+                case 0:
+                    usernameInput.Select();
+                    break;
+                case 1:
+                    passwordInput.Select();
+                    break;
+            }
+        }
     }
 }

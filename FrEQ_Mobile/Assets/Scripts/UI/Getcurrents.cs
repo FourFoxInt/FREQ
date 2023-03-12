@@ -45,6 +45,12 @@ public class Getcurrents : MonoBehaviour
             eqModuleTitle.text = textSplit1[0];
             eqModuleDesc.text = textSplit1[1];
         }
+        else
+        {
+            fxSectionTitle.text = "";
+            fxModuleTitle.text = "";
+            fxModuleDesc.text = "";
+        }
     }
 
     void SetCurrentFx()
@@ -59,6 +65,12 @@ public class Getcurrents : MonoBehaviour
             fxSectionTitle.text = glbScr.currentFxTitle;
             fxModuleTitle.text = textSplit2[0];
             fxModuleDesc.text = textSplit2[1];
+        }
+        else
+        {
+            fxSectionTitle.text = "";
+            fxModuleTitle.text = "";
+            fxModuleDesc.text = "";
         }
     }
 }

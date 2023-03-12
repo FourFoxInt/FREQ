@@ -6012,6 +6012,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usernameText: {fileID: 649916339}
   warningPanel: {fileID: 988251557}
+  m1Btn: {fileID: 258069871}
+  m2Btn: {fileID: 1982253798}
+  m3Btn: {fileID: 1201236806}
+  m4Btn: {fileID: 1920120708}
+  m5Btn: {fileID: 1663652448}
+  m6Btn: {fileID: 1656403213}
+  m1radial: {fileID: 1085738532}
+  m1progress: {fileID: 302275386}
+  m2radial: {fileID: 800310709}
+  m2progress: {fileID: 1352153737}
+  m3radial: {fileID: 1728062371}
+  m3progress: {fileID: 941148905}
+  m4radial: {fileID: 852186265}
+  m4progress: {fileID: 221985060}
+  m5radial: {fileID: 1608527616}
+  m5progress: {fileID: 1261114456}
+  m6radial: {fileID: 542642731}
+  m6progress: {fileID: 707761629}
 --- !u!114 &851573260
 MonoBehaviour:
   m_ObjectHideFlags: 0

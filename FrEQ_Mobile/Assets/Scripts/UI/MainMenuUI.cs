@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MainMenuUI : MonoBehaviour
@@ -10,6 +11,29 @@ public class MainMenuUI : MonoBehaviour
     private NetworkGlobals netGlbScr;
     private Globals glbScr;
     [SerializeField] private GameObject warningPanel;
+
+    [Header("Section Buttons")]
+    [SerializeField] private Button m1Btn;
+    [SerializeField] private Button m2Btn;
+    [SerializeField] private Button m3Btn;
+    [SerializeField] private Button m4Btn;
+    [SerializeField] private Button m5Btn;
+    [SerializeField] private Button m6Btn;
+
+    [SerializeField] private Image m1radial;
+    [SerializeField] private Image m1progress;
+    [SerializeField] private Image m2radial;
+    [SerializeField] private Image m2progress;
+    [SerializeField] private Image m3radial;
+    [SerializeField] private Image m3progress;
+    [SerializeField] private Image m4radial;
+    [SerializeField] private Image m4progress;
+    [SerializeField] private Image m5radial;
+    [SerializeField] private Image m5progress;
+    [SerializeField] private Image m6radial;
+    [SerializeField] private Image m6progress;
+
+
 
     private void Start()
     {
@@ -29,6 +53,8 @@ public class MainMenuUI : MonoBehaviour
             warningPanel.SetActive(true);
             glbScr.hasHadWarning = true;
         }
+
+        UnlockSections();
     }
 
     public void M1_Click()
@@ -962,6 +988,54 @@ public class MainMenuUI : MonoBehaviour
                 glbScr.canNoChange = true;
                 PlayerPrefs.SetInt("lastScene", SceneManager.GetActiveScene().buildIndex);
                 SceneManager.LoadScene(10);
+                break;
+        }
+    }
+
+
+    void UnlockSections()
+    {
+        switch (netGlbScr.classYear)
+        {
+            case "Year1":
+                m1Btn.interactable = true;
+                m2Btn.interactable = true;
+                m3Btn.interactable = false;
+                m3radial.color = new Color32(255, 255, 255, 75);
+                m3progress.color = new Color32(0, 168, 166, 75);
+                m4Btn.interactable = false;
+                m4radial.color = new Color32(255, 255, 255, 75);
+                m4progress.color = new Color32(0, 168, 166, 75);
+                m5Btn.interactable = false;
+                m5radial.color = new Color32(255, 255, 255, 75);
+                m5progress.color = new Color32(0, 168, 166, 75);
+                m6Btn.interactable = false;
+                m6radial.color = new Color32(255, 255, 255, 75);
+                m6progress.color = new Color32(0, 168, 166, 75);
+                break;
+            case "Year2":
+                m1Btn.interactable = true;
+                m2Btn.interactable = true;
+                m3Btn.interactable = true;
+                m4Btn.interactable = false;
+                m4radial.color = new Color32(255, 255, 255, 75);
+                m4progress.color = new Color32(0, 168, 166, 75);
+                m5Btn.interactable = false;
+                m5radial.color = new Color32(255, 255, 255, 75);
+                m5progress.color = new Color32(0, 168, 166, 75);
+                m6Btn.interactable = false;
+                m6radial.color = new Color32(255, 255, 255, 75);
+                m6progress.color = new Color32(0, 168, 166, 75);
+                break;
+            case "Year3":
+                m1Btn.interactable = true;
+                m2Btn.interactable = true;
+                m3Btn.interactable = true;
+                m4Btn.interactable = false;
+                m4radial.color = new Color32(255, 255, 255, 75);
+                m4progress.color = new Color32(0, 168, 166, 75);
+                m5Btn.interactable = true;
+                m6Btn.interactable = true;
                 break;
         }
     }

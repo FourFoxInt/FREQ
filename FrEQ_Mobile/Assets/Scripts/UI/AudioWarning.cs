@@ -64,5 +64,7 @@ public class AudioWarning : MonoBehaviour
         masterBus.setVolume(globals.masterVolume);
         fmodEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         warningPanel.SetActive(false);
+        PlayerPrefs.SetInt("hadAudioWarning", 1);
+        PlayerPrefs.SetFloat("MasterVolume", globals.masterVolume);
     }
 }
