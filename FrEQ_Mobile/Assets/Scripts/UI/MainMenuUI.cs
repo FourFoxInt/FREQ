@@ -9,6 +9,7 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI usernameText;
     private NetworkGlobals netGlbScr;
     private Globals glbScr;
+    [SerializeField] private GameObject warningPanel;
 
     private void Start()
     {
@@ -21,6 +22,12 @@ public class MainMenuUI : MonoBehaviour
         else
         {
             usernameText.text = netGlbScr.username;
+        }
+
+        if (!glbScr.hasHadWarning)
+        {
+            warningPanel.SetActive(true);
+            glbScr.hasHadWarning = true;
         }
     }
 

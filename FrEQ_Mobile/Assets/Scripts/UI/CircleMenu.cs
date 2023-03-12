@@ -2,20 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class CircleMenu : MonoBehaviour
 {
     private NetworkGlobals networkGlobals;
+    private Globals globals;
     [SerializeField] private Animator menuCircleAni;
     [SerializeField] private Animator profileCircleAni;
     [SerializeField] private Animator menuBtnAni;
     [SerializeField] private Animator profileBtnAni;
+    [SerializeField] private GameObject buttons;
+    [SerializeField] private GameObject settingsMenu;
+    [SerializeField] private Slider masterVolSlider;
+    FMOD.Studio.Bus masterBus;
 
     private bool menuIn = false;
     private bool profileMenuIn = false;
 
-    void Start(){
+    void Awake()
+    {
         networkGlobals = FindObjectOfType<NetworkGlobals>();
+        globals = FindObjectOfType<Globals>();
+        masterVolSlider.value = globals.masterVolume;
+        masterBus = FMODUnity.RuntimeManager.GetBus("bus:/Master");
     }
     public void Menu_BtnClick()
     {
@@ -56,6 +67,21 @@ public class CircleMenu : MonoBehaviour
         SceneManager.LoadScene(12);
     }
 
+    public void SettingsBtn()
+    {
+        masterVolSlider.value = globals.masterVolume;
+        masterBus = FMODUnity.RuntimeManager.GetBus("bus:/Master");
+        buttons.SetActive(false);
+        settingsMenu.SetActive(true);
+    }
+
+    public void SettingsCloseBtn()
+    {
+        buttons.SetActive(true);
+        settingsMenu.SetActive(false);
+        Menu_BtnClick();
+    }
+
 
     //Profile Btns
     public void LogoutBtnClick()
@@ -84,7 +110,18 @@ public class CircleMenu : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void EditProfile(){
+    public void EditProfile()
+    {
 
+    }
+
+
+    /////
+    //Settings
+    ////
+    public void MasterVolumeSlider()
+    {
+        globals.masterVolume = masterVolSlider.value;
+        masterBus.setVolume(globals.masterVolume);
     }
 }

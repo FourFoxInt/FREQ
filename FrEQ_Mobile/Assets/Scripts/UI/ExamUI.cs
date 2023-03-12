@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -217,7 +217,6 @@ public class ExamUI : MonoBehaviour
 
     void SetExamButton()
     {
-        Debug.Log(examID);
         if (examID == "M2E1")
         {
             m2e1btn.SetActive(true);

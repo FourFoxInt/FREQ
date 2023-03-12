@@ -1,7 +1,8 @@
 {9809b9ff-99fd-465d-a6ac-d457a5bbffb7} bank:/Master
 {0014992b-e886-0a1f-20e5-5ea95448f92f} bank:/Master.strings
 {27e20586-d15a-4740-8096-5cf40ba88367} bus:/
-{c6561da3-0be6-47a2-962f-ad11e1c6bac9} bus:/Reverb
+{23bdefbd-a0be-497f-84e4-eee27e62c6b0} bus:/Master
+{c6561da3-0be6-47a2-962f-ad11e1c6bac9} bus:/Master/Reverb
 {92ee11fd-aeb8-4515-98fa-f84e09da7bca} event:/2kHz
 {9309aa2f-f43e-46d9-82f1-e19b362e4374} event:/80Hz
 {3ce7e2f9-d0bf-498d-b857-ab95d2d918c8} event:/8kHz
@@ -11,6 +12,7 @@
 {51ee9e67-ec99-474a-96e6-2d12ffc6405a} event:/music
 {e98556d3-9fca-42a3-992f-ef227e7ad24c} event:/pn
 {015f0332-8eb1-4555-952e-a56c85aab32f} event:/pnEx
+{791444d4-72ed-4811-9027-75eff12048f0} parameter:/Comp
 {fa68a7bb-1145-42f9-9637-4986b161955b} parameter:/dist
 {16b4fe3c-0530-4125-b262-bd9f8e218a52} parameter:/freq
 {1508574d-4630-48be-9fbc-8f6c09b7c18a} parameter:/freq2

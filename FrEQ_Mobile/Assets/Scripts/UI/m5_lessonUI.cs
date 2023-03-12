@@ -85,7 +85,7 @@ public class m5_lessonUI : MonoBehaviour
     private void Start()
     {
         netGlbScr = GameObject.Find("NetworkGlobals").GetComponent<NetworkGlobals>();
-        glbScr = GameObject.Find("globals").GetComponent<Globals>();
+        glbScr = GameObject.Find("Globals").GetComponent<Globals>();
         UnlockButtons();
 
         m1lockText.text = "Click to begin.";

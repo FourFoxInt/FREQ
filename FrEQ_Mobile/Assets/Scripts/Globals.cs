@@ -123,6 +123,10 @@ public class Globals : MonoBehaviour
     public int M6EQDB_T5_Score;
     public int M6EQDB_T6_Score;
 
+    [Header("Audio Settings")]
+    public float masterVolume = 1f;
+    public bool hasHadWarning = false;
+
     private void Update()
     {
         if (cutOrBoost == "Both")
