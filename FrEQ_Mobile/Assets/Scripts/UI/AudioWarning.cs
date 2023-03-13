@@ -20,19 +20,24 @@ public class AudioWarning : MonoBehaviour
     [Header("Settings")]
     private bool samplePlaying = false;
 
-    void Awake()
+    void Start()
     {
+        playSampleBtn.interactable = false;
         globals = FindObjectOfType<Globals>();
-        masterBus = FMODUnity.RuntimeManager.GetBus("bus:/Master");
-        if (!globals.hasHadWarning)
+        if (FMODUnity.RuntimeManager.HasBankLoaded("Master"))
         {
-            masterVolSlider.value = 0.5f;
-            globals.masterVolume = masterVolSlider.value;
+            Debug.Log("Master Bank Loaded");
+            masterBus = FMODUnity.RuntimeManager.GetBus("bus:/Master");
+            if (!globals.hasHadWarning)
+            {
+                masterVolSlider.value = 0.5f;
+                globals.masterVolume = masterVolSlider.value;
+            }
+            masterBus.setVolume(globals.masterVolume);
+            fmodEvent = FMODUnity.RuntimeManager.CreateInstance("event:/music");
+            fmodEvent.setParameterByName("track", 3);
+            closeBtn.interactable = false;
         }
-        masterBus.setVolume(globals.masterVolume);
-        fmodEvent = FMODUnity.RuntimeManager.CreateInstance("event:/music");
-        fmodEvent.setParameterByName("track", 3);
-        closeBtn.interactable = false;
     }
 
     public void PlaySampleBtn()

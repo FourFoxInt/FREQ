@@ -57,6 +57,12 @@ public class MainMenuUI : MonoBehaviour
         UnlockSections();
     }
 
+    void Update(){
+        if(Input.GetKeyDown(KeyCode.D)){
+            PlayerPrefs.DeleteAll();
+        }
+    }
+
     public void M1_Click()
     {
         glbScr.currentCourse = "M1";
