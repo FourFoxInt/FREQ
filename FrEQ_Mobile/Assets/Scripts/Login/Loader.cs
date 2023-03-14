@@ -10,18 +10,29 @@ public class Loader : MonoBehaviour
 
     private void Start()
     {
-        if(PlayerPrefs.HasKey("hadAudioWarning")){
-            if(PlayerPrefs.GetInt("hadAudioWarning") == 0){
+        if (PlayerPrefs.HasKey("hadAudioWarning"))
+        {
+            if (PlayerPrefs.GetInt("hadAudioWarning") == 0)
+            {
                 FindObjectOfType<Globals>().hasHadWarning = false;
-            }else if(PlayerPrefs.GetInt("hadAudioWarning") == 1){
+            }
+            else if (PlayerPrefs.GetInt("hadAudioWarning") == 1)
+            {
                 FindObjectOfType<Globals>().hasHadWarning = true;
             }
         }
 
-        if(PlayerPrefs.HasKey("MasterVolume")){
+        if (PlayerPrefs.HasKey("MasterVolume"))
+        {
             FindObjectOfType<Globals>().masterVolume = PlayerPrefs.GetFloat("MasterVolume");
         }
         StartCoroutine(LoadLogin());
+
+        FMODUnity.RuntimeManager.LoadBank("Master");
+        if (FMODUnity.RuntimeManager.HasBankLoaded("Master"))
+        {
+            StartCoroutine(LoadLogin());
+        }
     }
 
     IEnumerator LoadLogin()
@@ -32,4 +43,3 @@ public class Loader : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 }
- 
