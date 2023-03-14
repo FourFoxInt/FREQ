@@ -117,6 +117,9 @@ public class Login : MonoBehaviour
 
     public void SubmitBtn()
     {
+        FMODUnity.RuntimeManager.CoreSystem.mixerSuspend();
+        FMODUnity.RuntimeManager.CoreSystem.mixerResume();
+        FMODUnity.RuntimeManager.LoadBank("Master");
         StartCoroutine(LoginUser());
     }
     public void UsernameInput()
@@ -203,7 +206,7 @@ public class Login : MonoBehaviour
             inputFocus--;
             if (inputFocus < 0)
             {
-                inputFocus = 1; 
+                inputFocus = 1;
             }
             switch (inputFocus)
             {

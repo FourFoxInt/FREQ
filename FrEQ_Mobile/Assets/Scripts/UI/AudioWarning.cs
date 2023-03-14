@@ -40,7 +40,6 @@ public class AudioWarning : MonoBehaviour
     {
         if (FMODUnity.RuntimeManager.HasBankLoaded("Master"))
         {
-            Debug.Log("Master Bank Loaded");
             playSampleBtn.interactable = true;
         }else{
             playSampleBtn.interactable = false;
