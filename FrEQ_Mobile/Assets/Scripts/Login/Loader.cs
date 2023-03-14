@@ -27,6 +27,12 @@ public class Loader : MonoBehaviour
             FindObjectOfType<Globals>().masterVolume = PlayerPrefs.GetFloat("MasterVolume");
         }
         StartCoroutine(LoadLogin());
+
+        FMODUnity.RuntimeManager.LoadBank("Master");
+        if (FMODUnity.RuntimeManager.HasBankLoaded("Master"))
+        {
+            StartCoroutine(LoadLogin());
+        }
     }
 
     IEnumerator LoadLogin()

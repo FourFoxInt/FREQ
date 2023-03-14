@@ -1005,7 +1005,9 @@ public class MainMenuUI : MonoBehaviour
         {
             case "Year1":
                 m1Btn.interactable = true;
-                m2Btn.interactable = true;
+                m2Btn.interactable = false;
+                m2radial.color = new Color32(255, 255, 255, 75);
+                m2progress.color = new Color32(0, 168, 166, 75);
                 m3Btn.interactable = false;
                 m3radial.color = new Color32(255, 255, 255, 75);
                 m3progress.color = new Color32(0, 168, 166, 75);
@@ -1021,7 +1023,9 @@ public class MainMenuUI : MonoBehaviour
                 break;
             case "Year2":
                 m1Btn.interactable = true;
-                m2Btn.interactable = true;
+                m2Btn.interactable = false;
+                m2radial.color = new Color32(255, 255, 255, 75);
+                m2progress.color = new Color32(0, 168, 166, 75);
                 m3Btn.interactable = true;
                 m4Btn.interactable = false;
                 m4radial.color = new Color32(255, 255, 255, 75);
@@ -1035,7 +1039,9 @@ public class MainMenuUI : MonoBehaviour
                 break;
             case "Year3":
                 m1Btn.interactable = true;
-                m2Btn.interactable = true;
+                m2Btn.interactable = false;
+                m2radial.color = new Color32(255, 255, 255, 75);
+                m2progress.color = new Color32(0, 168, 166, 75);
                 m3Btn.interactable = true;
                 m4Btn.interactable = false;
                 m4radial.color = new Color32(255, 255, 255, 75);

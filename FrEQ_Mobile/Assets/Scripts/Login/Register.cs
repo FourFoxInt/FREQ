@@ -143,6 +143,7 @@ public class Register : MonoBehaviour
         form.AddField("studentID", usernameInputText);
         form.AddField("email", emailInputText);
         form.AddField("password", passwordInputText);
+        form.AddField("class", "Year1");
         UnityWebRequest www = UnityWebRequest.Post("https://www.ffet.a2hosted.com/mobilePhp/autoRegisterUser.php", form);
         yield return www.SendWebRequest();
 

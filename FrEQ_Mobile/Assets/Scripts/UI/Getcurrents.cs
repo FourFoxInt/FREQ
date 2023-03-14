@@ -47,7 +47,7 @@ public class Getcurrents : MonoBehaviour
         }
         else
         {
-            fxSectionTitle.text = "";
+            fxSectionTitle.text = "Frequency Training.";
             fxModuleTitle.text = "";
             fxModuleDesc.text = "";
         }
@@ -68,7 +68,7 @@ public class Getcurrents : MonoBehaviour
         }
         else
         {
-            fxSectionTitle.text = "";
+            fxSectionTitle.text = "Effects.";
             fxModuleTitle.text = "";
             fxModuleDesc.text = "";
         }
