@@ -201,6 +201,8 @@ public class IntroInfoController : MonoBehaviour
 
     public void PlayPnBtnClick()
     {
+        FMODUnity.RuntimeManager.CoreSystem.mixerSuspend();
+        FMODUnity.RuntimeManager.CoreSystem.mixerResume();
         if (!pNplaying)
         {
             pNEvent = FMODUnity.RuntimeManager.CreateInstance("event:/pnEx");
