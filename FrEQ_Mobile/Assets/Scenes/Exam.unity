@@ -1960,7 +1960,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &519420033
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1977,7 +1977,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &523789429
 GameObject:
   m_ObjectHideFlags: 0
@@ -26761,7 +26762,7 @@ MonoBehaviour:
   submitBtn: {fileID: 5519726704398642455}
   title: 
   titleText: {fileID: 5519726704741823492}
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 5519726704115784848}
   playText: {fileID: 5519726703236816272}
   curEx: 1
   closeTestCanvas: {fileID: 5519726702987016174}
