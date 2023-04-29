@@ -26730,6 +26730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canHalfMark: 0
+  dbExamGO: {fileID: 5519726702988944940}
   selected: {r: 0, g: 0.65882355, b: 0.6509804, a: 1}
   notSelected: {r: 1, g: 1, b: 1, a: 1}
   playing: {r: 0, g: 0.65882355, b: 0.6509804, a: 1}
@@ -27200,6 +27201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canHalfMark: 0
+  eqExamGO: {fileID: 7738433267937089715}
   selected: {r: 0, g: 0.65882355, b: 0.6509804, a: 1}
   notSelected: {r: 1, g: 1, b: 1, a: 1}
   playing: {r: 0, g: 0.65882355, b: 0.6509804, a: 1}
@@ -27357,6 +27359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f84b3658380df614694921b6e9342a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fxExamGO: {fileID: 2536653337553414489}
   selected: {r: 0, g: 0.65882355, b: 0.6509804, a: 1}
   notSelected: {r: 1, g: 1, b: 1, a: 1}
   playing: {r: 0, g: 0.65882355, b: 0.6509804, a: 1}
@@ -27397,6 +27400,7 @@ MonoBehaviour:
   title: Effects Exam
   titleText: {fileID: 2536653337383376248}
   playText: {fileID: 2536653337100308926}
+  scoreText: {fileID: 2536653337438685396}
   curEx: 1
   closeTestCanvas: {fileID: 2536653337631724779}
   closeTestBtn: {fileID: 2536653336706672579}

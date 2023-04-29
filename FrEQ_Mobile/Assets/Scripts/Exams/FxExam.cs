@@ -10,6 +10,7 @@ public class FxExam : MonoBehaviour
 {
     private Globals glbScr;
     private NetworkGlobals netGlbScr;
+    [SerializeField] private GameObject fxExamGO;
 
     //COLOURS
     [SerializeField] private Color selected;
@@ -57,6 +58,7 @@ public class FxExam : MonoBehaviour
     public string title;
     [SerializeField] private TextMeshProUGUI titleText;
     [SerializeField] private TextMeshProUGUI playText;
+    [SerializeField] private TextMeshProUGUI scoreText;
     public int curEx = 1;
     [SerializeField] private GameObject closeTestCanvas;
     [SerializeField] private Button closeTestBtn;
@@ -852,6 +854,7 @@ public class FxExam : MonoBehaviour
     }
     void Results()
     {
+        scoreText.text = score.ToString() + " out of 8"; ;
         resultsCanvas.SetActive(true);
         StartCoroutine(PostResults());
 
@@ -1631,7 +1634,7 @@ public class FxExam : MonoBehaviour
         {
             ResetAllButtons();
             RestartTest();
-            //modMainScr.CloseAppButton();
+            CloseAppButton();
         }
     }
 
@@ -1639,11 +1642,17 @@ public class FxExam : MonoBehaviour
     {
         closeTestCanvas.SetActive(false);
         ResetAllButtons();
-        //modMainScr.CloseAppButton();
         RestartTest();
+        CloseAppButton();
     }
     public void NoClose()
     {
         closeTestCanvas.SetActive(false);
+    }
+
+    void CloseAppButton()
+    {
+        closeTestCanvas.SetActive(false);
+        fxExamGO.SetActive(false);
     }
 }

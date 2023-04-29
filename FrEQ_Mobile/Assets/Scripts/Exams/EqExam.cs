@@ -11,6 +11,7 @@ public class EqExam : MonoBehaviour
     private Globals glbScr;
     private NetworkGlobals netGlbScr;
     public bool canHalfMark = false;
+    [SerializeField] private GameObject eqExamGO;
 
     //COLOURS
     [SerializeField] private Color selected;
@@ -203,10 +204,10 @@ public class EqExam : MonoBehaviour
         }
         titleText.text = title;
 
-        if (Input.GetKeyDown(KeyCode.I))
+/*        if (Input.GetKeyDown(KeyCode.I))
         {
             StartCoroutine(PostResults());
-        }
+        }*/
     }
 
     void ButtonActivations()
@@ -2527,6 +2528,7 @@ public class EqExam : MonoBehaviour
     }
     void Results()
     {
+        scoreText.text = score.ToString() + " out of 20";
         resultsCanvas.SetActive(true);
         StartCoroutine(PostResults());
 
@@ -3506,15 +3508,15 @@ public class EqExam : MonoBehaviour
         {
             ResetAllButtons();
             RestartTest();
-            //modMainScr.CloseAppButton();
+            CloseAppButton();
         }
     }
     public void YesClose()
     {
         closeTestCanvas.SetActive(false);
         ResetAllButtons();
-        //modMainScr.CloseAppButton();
         RestartTest();
+        CloseAppButton();
     }
     public void NoClose()
     {
@@ -3628,5 +3630,11 @@ public class EqExam : MonoBehaviour
     public void HomeBtn()
     {
         SceneManager.LoadScene(3);
+    }
+
+    void CloseAppButton()
+    {
+        eqExamGO.SetActive(false);
+        closeTestCanvas.SetActive(false);
     }
 }

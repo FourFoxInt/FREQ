@@ -11,6 +11,7 @@ public class DbExam : MonoBehaviour
     private Globals glbScr;
     private NetworkGlobals netGlbScr;
     public bool canHalfMark = false;
+    [SerializeField] private GameObject dbExamGO;
 
     //COLOURS
     [SerializeField] private Color selected;
@@ -246,10 +247,10 @@ public class DbExam : MonoBehaviour
 
         titleText.text = title;
 
-        if (Input.GetKeyDown(KeyCode.I))
+/*        if (Input.GetKeyDown(KeyCode.I))
         {
             StartCoroutine(PostResults());
-        }
+        }*/
     }
 
     void ButtonActivations()
@@ -464,6 +465,7 @@ public class DbExam : MonoBehaviour
     }
     void Results()
     {
+        scoreText.text = score.ToString() + " out of 20"; ;
         resultsCanvas.SetActive(true);
         StartCoroutine(PostResults());
 
@@ -1435,15 +1437,15 @@ public class DbExam : MonoBehaviour
         {
             ResetAllButtons();
             RestartTest();
-            //modMainScr.CloseAppButton();
+            CloseAppButton();
         }
     }
     public void YesClose()
     {
         closeTestCanvas.SetActive(false);
         ResetAllButtons();
-        //modMainScr.CloseAppButton();
         RestartTest();
+        CloseAppButton();
     }
     public void NoClose()
     {
@@ -1859,5 +1861,11 @@ public class DbExam : MonoBehaviour
     public void HomeBtn()
     {
         SceneManager.LoadScene(3);
+    }
+
+    void CloseAppButton()
+    {
+        closeTestCanvas.SetActive(false);
+        dbExamGO.SetActive(false);
     }
 }
