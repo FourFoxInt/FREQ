@@ -90,7 +90,7 @@ public class m1_lessonBtns : MonoBehaviour
         glbScr.minFreq = 380.1f;
         glbScr.maxFreq = 410f;
         glbScr.pinkOrMusic = "MUS";
-        glbScr.appTestID = "M1_T51";
+        glbScr.appTestID = "M1_T5";
         glbScr.canHalfMark = false;
         PlayerPrefs.SetInt("lastScene", SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene(5);
