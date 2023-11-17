@@ -7063,8 +7063,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 490.1797, y: -1044.5}
-  m_SizeDelta: {x: 980.3594, y: 309}
+  m_AnchoredPosition: {x: 490, y: -1044.5}
+  m_SizeDelta: {x: 980, y: 309}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2536653336243563518
 MonoBehaviour:
@@ -8062,8 +8062,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 490.1797, y: -570}
-  m_SizeDelta: {x: 980.3594, y: 530}
+  m_AnchoredPosition: {x: 490, y: -570}
+  m_SizeDelta: {x: 980, y: 530}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2536653336462600065
 MonoBehaviour:
@@ -8141,8 +8141,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 490.1797, y: -12.5}
-  m_SizeDelta: {x: 980.3594, y: 25}
+  m_AnchoredPosition: {x: 490, y: -12.5}
+  m_SizeDelta: {x: 980, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2536653336487532792
 MonoBehaviour:
@@ -8828,7 +8828,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 1500}
+  m_SizeDelta: {x: 0, y: 1850}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &2536653336652051604
 CanvasRenderer:
@@ -9805,8 +9805,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 490.1797, y: -1226.5}
-  m_SizeDelta: {x: 980.3594, y: 25}
+  m_AnchoredPosition: {x: 490, y: -1226.5}
+  m_SizeDelta: {x: 980, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2536653336765058451
 GameObject:
@@ -10585,9 +10585,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5527992194609558630}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 5527992194609558624}
+        m_TargetAssemblyTypeName: FxExam, Assembly-CSharp
+        m_MethodName: TestCloseBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11160,7 +11160,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Acoustic
+  m_text: Jazz
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fc4782b96baee8f4692acd86df9fe5d4, type: 2}
   m_sharedMaterial: {fileID: 273598904999284559, guid: fc4782b96baee8f4692acd86df9fe5d4,
@@ -12585,8 +12585,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 490.1797, y: -165}
-  m_SizeDelta: {x: 980.3594, y: 250}
+  m_AnchoredPosition: {x: 490, y: -165}
+  m_SizeDelta: {x: 980, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2536653337599066784
 MonoBehaviour:
@@ -13049,8 +13049,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 490.1797, y: -1464}
-  m_SizeDelta: {x: 980.3594, y: 420}
+  m_AnchoredPosition: {x: 490, y: -1464}
+  m_SizeDelta: {x: 980, y: 420}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2536653337650147607
 MonoBehaviour:
@@ -13185,9 +13185,7 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Acoustic
-      m_Image: {fileID: 0}
-    - m_Text: Rock
+    - m_Text: Jazz
       m_Image: {fileID: 0}
     - m_Text: Electronic
       m_Image: {fileID: 0}
@@ -15034,8 +15032,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 490.1797, y: -862.5}
-  m_SizeDelta: {x: 980.3594, y: 25}
+  m_AnchoredPosition: {x: 490, y: -862.5}
+  m_SizeDelta: {x: 980, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2536653338205359460
 GameObject:

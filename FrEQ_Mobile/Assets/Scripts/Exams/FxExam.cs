@@ -182,14 +182,16 @@ public class FxExam : MonoBehaviour
             }
         }
     }
-    void ButtonActivations()
+    public void ButtonActivations()
     {
         if (glbScr.canNoChange)
         {
+            Debug.Log("Should be showing the no change button");
             noChangeFrame.SetActive(true);
         }
         else if (glbScr.canNoChange == false)
         {
+            Debug.Log("Should NOT be showing the no change button");
             noChangeFrame.SetActive(false);
         }
 
@@ -1131,16 +1133,6 @@ public class FxExam : MonoBehaviour
             //genre = "Rock";
             fmodEvent.setParameterByName("track", 1.5f);
         }
-        else if (genreValue == 2)
-        {
-            //genre = "Pop";
-            fmodEvent.setParameterByName("track", 2.5f);
-        }
-        else if (genreValue == 3)
-        {
-            //genre = "Indie";
-            fmodEvent.setParameterByName("track", 1.5f);
-        }
     }
     public void RestartTest()
     {
@@ -1654,5 +1646,6 @@ public class FxExam : MonoBehaviour
     {
         closeTestCanvas.SetActive(false);
         fxExamGO.SetActive(false);
+        resultsCanvas.SetActive(false);
     }
 }

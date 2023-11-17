@@ -30,7 +30,7 @@ public class m2_lessonButtons : MonoBehaviour
         glbScr.minFx = 0f;
         glbScr.maxFx = 40f;
         glbScr.appTestID = "M2_T1";
-        glbScr.canNoChange = false;
+        glbScr.canNoChange = true;
         PlayerPrefs.SetInt("lastScene", SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene(10);
     }

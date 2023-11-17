@@ -71,18 +71,31 @@ public class ExamUI : MonoBehaviour
     }
     public void M2E1Btn()
     {
-        appOpen = true;
-        glbScr.lessonID = "M2E1";
-        glbScr.cutOrBoost = "Both";
-        glbScr.anserBtnsType = "10";
-        glbScr.minFreq = 0f;
-        glbScr.maxFreq = 100f;
-        glbScr.pinkOrMusic = "PN";
-        glbScr.appTestID = "Y2E1";
-        glbScr.canHalfMark = false;
-        fXexamCanvas.SetActive(true);
-        GameObject.Find("AppScripts").GetComponent<ExamResults>().totalPossibleScore = "8";
+        /*        appOpen = true;
+                glbScr.lessonID = "M2E1";
+                glbScr.cutOrBoost = "Both";
+                glbScr.anserBtnsType = "10";
+                glbScr.minFreq = 0f;
+                glbScr.maxFreq = 100f;
+                glbScr.pinkOrMusic = "PN";
+                glbScr.appTestID = "Y2E1";
+                glbScr.canHalfMark = false;
+                fXexamCanvas.SetActive(true);
+                GameObject.Find("AppScripts").GetComponent<ExamResults>().totalPossibleScore = "8";*/
         //examTextScr.titleString = "Year 2 Exam 3";
+
+        appOpen = true;
+        glbScr.lessonID = "M3E1";
+        glbScr.cutOrBoost = "Both";
+        glbScr.anserBtnsType = "All";
+        glbScr.minFx = 0f;
+        glbScr.maxFx = 90f;
+        glbScr.appTestID = "Y2E3";
+        glbScr.canNoChange = true;
+        fXexamCanvas.SetActive(true);
+        FxExam fe = FindObjectOfType<FxExam>();
+        fe.ButtonActivations();
+        GameObject.Find("AppScripts").GetComponent<ExamResults>().totalPossibleScore = "8";
     }
     public void M3E1Btn()
     {
