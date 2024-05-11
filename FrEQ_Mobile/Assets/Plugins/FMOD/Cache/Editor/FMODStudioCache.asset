@@ -63,7 +63,7 @@ MonoBehaviour:
   Path: FMOD/FFET/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638257152489291558
+  lastModified: 638359171443260993
   FileSizes:
   - Name: Desktop
     Value: 20385504
@@ -131,7 +131,7 @@ MonoBehaviour:
   Path: FMOD/FFET/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638257152489301555
+  lastModified: 638359171443260993
   FileSizes:
   - Name: Desktop
     Value: 1486
@@ -395,7 +395,7 @@ MonoBehaviour:
   - {fileID: -6917432664223171950}
   StringsBanks:
   - {fileID: -5262817417634793267}
-  cacheTime: 638257152489301555
+  cacheTime: 638359171443260993
   cacheVersion: 10
 --- !u!114 &157497668268259009
 MonoBehaviour:

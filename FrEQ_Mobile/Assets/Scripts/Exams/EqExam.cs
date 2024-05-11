@@ -1782,7 +1782,7 @@ public class EqExam : MonoBehaviour
         k12500Btn.GetComponent<Image>().color = notSelected;
         k16000Btn.GetComponent<Image>().color = notSelected;
         userFreq = 20;
-        userFreqString = "2.5 Hz";
+        userFreqString = "2.5 kHz";
         freqSelected = true;
     }
     public void k315BtnClick()
@@ -1850,7 +1850,7 @@ public class EqExam : MonoBehaviour
         k12500Btn.GetComponent<Image>().color = notSelected;
         k16000Btn.GetComponent<Image>().color = notSelected;
         userFreq = 21;
-        userFreqString = "3.16 kHz";
+        userFreqString = "3.15 kHz";
         freqSelected = true;
     }
     public void k4BtnClick()
@@ -1986,7 +1986,7 @@ public class EqExam : MonoBehaviour
         k12500Btn.GetComponent<Image>().color = notSelected;
         k16000Btn.GetComponent<Image>().color = notSelected;
         userFreq = 1;
-        userFreqString = "31 Hz";
+        userFreqString = "5 kHz";
         freqSelected = true;
     }
     public void k63BtnClick()
