@@ -32,6 +32,8 @@ public class EqExam : MonoBehaviour
     [SerializeField] private int genreValue;
 
     //Freq Buttons
+    [SerializeField] private GameObject freqButtonsGroup;
+    [SerializeField] private GameObject freqButtonsScroll;
     [SerializeField] private GameObject lowBtn;[SerializeField] private GameObject midBtn;[SerializeField] private GameObject highBtn;
     [SerializeField] private GameObject h31Btn;[SerializeField] private GameObject h40Btn;[SerializeField] private GameObject h50Btn;
     [SerializeField] private GameObject h63Btn;[SerializeField] private GameObject h80Btn;[SerializeField] private GameObject h100Btn;
@@ -155,14 +157,15 @@ public class EqExam : MonoBehaviour
 
         ButtonActivations();
         CutBoostBtnActivation();
-        MusicDropdownActivation();
 
         titleText.text = title;
     }
+
     private void Update()
     {
         GenreChange();
         ButtonActivations();
+        MusicDropdownActivation();
 
         if (isPlaying)
         {
@@ -355,10 +358,16 @@ public class EqExam : MonoBehaviour
         if (glbScr.pinkOrMusic == "PN")
         {
             audioDropdown.SetActive(false);
+            cutBoostBtns.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -380);
+            freqButtonsGroup.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -680);
+            freqButtonsScroll.GetComponent<RectTransform>().sizeDelta = new Vector2(freqButtonsScroll.GetComponent<RectTransform>().sizeDelta.x, 940);
         }
         else if (glbScr.pinkOrMusic == "MUS")
         {
             audioDropdown.SetActive(true);
+            cutBoostBtns.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -620);
+            freqButtonsGroup.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -890.6f);
+            freqButtonsScroll.GetComponent<RectTransform>().sizeDelta = new Vector2(freqButtonsScroll.GetComponent<RectTransform>().sizeDelta.x, 650);
         }
     }
     public void GenreDropdown()

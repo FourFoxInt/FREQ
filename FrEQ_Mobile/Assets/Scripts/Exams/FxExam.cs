@@ -186,12 +186,10 @@ public class FxExam : MonoBehaviour
     {
         if (glbScr.canNoChange)
         {
-            Debug.Log("Should be showing the no change button");
             noChangeFrame.SetActive(true);
         }
         else if (glbScr.canNoChange == false)
         {
-            Debug.Log("Should NOT be showing the no change button");
             noChangeFrame.SetActive(false);
         }
 
@@ -255,6 +253,7 @@ public class FxExam : MonoBehaviour
     {
         if (glbScr.pinkOrMusic == "PN")
         {
+            Debug.Log("Should NOT be showing the MUISC CHOICE");
             audioDropdown.SetActive(false);
         }
         else if (glbScr.pinkOrMusic == "MUS")

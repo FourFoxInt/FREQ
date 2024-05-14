@@ -14,6 +14,7 @@ public class ExamUI : MonoBehaviour
     private ExamResults examReScr;
     private NetworkGlobals netGlbScr;
     private Globals glbScr;
+    private int currentScore = 0;
 
     [SerializeField] private GameObject eQexamCanvas;
     [SerializeField] private GameObject fXexamCanvas;
@@ -21,27 +22,35 @@ public class ExamUI : MonoBehaviour
 
     [SerializeField] private GameObject m2e1btn;
     [SerializeField] private GameObject m2e1info;
+    [SerializeField] private TextMeshProUGUI m2e1_CurrentScoreText;
     private bool m2e1in;
     [SerializeField] private GameObject m3e1btn;
-    [SerializeField] private GameObject m3e1info;
+    [SerializeField] private GameObject m3e1info; 
+    [SerializeField] private TextMeshProUGUI m3e1_CurrentScoreText;
     private bool m3e1in;
     [SerializeField] private GameObject m3e2btn;
-    [SerializeField] private GameObject m3e2info;
+    [SerializeField] private GameObject m3e2info; 
+    [SerializeField] private TextMeshProUGUI m3e2_CurrentScoreText;
     private bool m3e2in;
     [SerializeField] private GameObject m4e1btn;
-    [SerializeField] private GameObject m4e1info;
+    [SerializeField] private GameObject m4e1info; 
+    [SerializeField] private TextMeshProUGUI m4e1_CurrentScoreText;
     private bool m4e1in;
     [SerializeField] private GameObject m5e1btn;
-    [SerializeField] private GameObject m5e1info;
+    [SerializeField] private GameObject m5e1info; 
+    [SerializeField] private TextMeshProUGUI m5e1_CurrentScoreText;
     private bool m5e1in;
     [SerializeField] private GameObject m5e2btn;
-    [SerializeField] private GameObject m5e2info;
+    [SerializeField] private GameObject m5e2info; 
+    [SerializeField] private TextMeshProUGUI m5e2_CurrentScoreText;
     private bool m5e2in;
     [SerializeField] private GameObject m6e1btn;
-    [SerializeField] private GameObject m6e1info;
+    [SerializeField] private GameObject m6e1info; 
+    [SerializeField] private TextMeshProUGUI m6e1_CurrentScoreText;
     private bool m6e1in;
     [SerializeField] private GameObject m6e2btn;
-    [SerializeField] private GameObject m6e2info;
+    [SerializeField] private GameObject m6e2info; 
+    [SerializeField] private TextMeshProUGUI m6e2_CurrentScoreText;
     private bool m6e2in;
 
     private string examID;
@@ -64,26 +73,8 @@ public class ExamUI : MonoBehaviour
         StartCoroutine(CheckForExam());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     public void M2E1Btn()
     {
-        /*        appOpen = true;
-                glbScr.lessonID = "M2E1";
-                glbScr.cutOrBoost = "Both";
-                glbScr.anserBtnsType = "10";
-                glbScr.minFreq = 0f;
-                glbScr.maxFreq = 100f;
-                glbScr.pinkOrMusic = "PN";
-                glbScr.appTestID = "Y2E1";
-                glbScr.canHalfMark = false;
-                fXexamCanvas.SetActive(true);
-                GameObject.Find("AppScripts").GetComponent<ExamResults>().totalPossibleScore = "8";*/
-        //examTextScr.titleString = "Year 2 Exam 3";
-
         appOpen = true;
         glbScr.lessonID = "M3E1";
         glbScr.cutOrBoost = "Both";
@@ -99,7 +90,6 @@ public class ExamUI : MonoBehaviour
     }
     public void M3E1Btn()
     {
-        Debug.Log("CLICKED");
         appOpen = true;
         glbScr.currentCourse = "Year 2 EQ";
         glbScr.lessonID = "M3E1";
@@ -223,52 +213,131 @@ public class ExamUI : MonoBehaviour
         else
         {
             examID = www.downloadHandler.text;
-            SetExamButton();
+            StartCoroutine(GetCurrentResult(ParseID(examID)));
         }
         www.Dispose();
     }
 
-    void SetExamButton()
+    IEnumerator GetCurrentResult(string id)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("studentID", netGlbScr.username);
+        form.AddField("appTestID", id);
+
+        UnityWebRequest www = UnityWebRequest.Post("https://www.ffet.a2hosted.com/mobilePhp/findCurrentResult.php", form);
+        www.certificateHandler = new CertHandler();
+        yield return www.SendWebRequest();
+
+        if (www.isNetworkError || www.isHttpError)
+        {
+            Debug.Log(www.error);
+        }
+        else
+        {
+            string[] allResults = www.downloadHandler.text.Split('|');
+            int highscore = 0;
+            foreach(string result in allResults)
+            {
+                if (int.TryParse(result, out int temp))
+                {
+                    int s = int.Parse(result);
+                    if (s > highscore)
+                    {
+                        highscore = s;
+                    }
+                }
+            }
+            currentScore = highscore;
+        }
+        SetExamButton(currentScore);
+        www.Dispose();
+    }
+
+    void SetExamButton(int s)
     {
         if (examID == "M2E1")
         {
             m2e1btn.SetActive(true);
             m2e1info.SetActive(true);
+            m2e1_CurrentScoreText.text = "Current Score: " + s.ToString();
         }
         else if (examID == "M3E1")
         {
             m3e1btn.SetActive(true);
             m3e1info.SetActive(true);
+            m3e1_CurrentScoreText.text = "Current Score: " + s.ToString();
         }
         else if (examID == "M3E2")
         {
             m3e2btn.SetActive(true);
             m3e2info.SetActive(true);
+            m3e2_CurrentScoreText.text = "Current Score: " + s.ToString();
         }
         else if (examID == "M4E1")
         {
             m4e1btn.SetActive(true);
             m4e1info.SetActive(true);
+            m4e1_CurrentScoreText.text = "Current Score: " + s.ToString();
         }
         else if (examID == "M5E1")
         {
             m5e1btn.SetActive(true);
-            m5e2info.SetActive(true);
+            m5e1info.SetActive(true);
+            m5e1_CurrentScoreText.text = "Current Score: " + s.ToString() + " out of 20.";
         }
         else if (examID == "M5E2")
         {
             m5e2btn.SetActive(true);
             m5e2info.SetActive(true);
+            m5e2_CurrentScoreText.text = "Current Score: " + s.ToString();
         }
         else if (examID == "M6E1")
         {
             m6e1btn.SetActive(true);
             m6e1info.SetActive(true);
+            m6e1_CurrentScoreText.text = "Current Score: " + s.ToString();
         }
         else if (examID == "M6E2")
         {
             m6e2btn.SetActive(true);
             m6e2info.SetActive(true);
+            m6e2_CurrentScoreText.text = "Current Score: " + s.ToString();
         }
+    }
+
+    private string ParseID(string id)
+    {
+        string newID = "";
+        switch (id)
+        {
+            case "M2E1":
+                newID = "Y2E3";
+                break;
+            case "M3E1":
+                newID = "Y2E1";
+                break;
+            case "M3E2":
+                newID = "Y2E2";
+                break;
+            case "M4E1":
+                newID = "Y2E3";
+                break;
+            case "M4E2":
+                newID = "Y2E4";
+                break;
+            case "M5E1":
+                newID = "Y3E1";
+                break;
+            case "M5E2":
+                newID = "Y3E2";
+                break;
+            case "M6E1":
+                newID = "Y3E3";
+                break;
+            case "M6E2":
+                newID = "Y3E4";
+                break;
+        }
+        return newID;
     }
 }
