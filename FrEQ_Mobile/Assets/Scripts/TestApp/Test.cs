@@ -2547,7 +2547,7 @@ public class Test : MonoBehaviour
 
         netGlbScr.userScore += score * 10;
         netGlbScr.tests += 1;
-        //StartCoroutine(UpdateStats());
+        StartCoroutine(UpdateStats());
         //netGlbScript.sessionTests = netGlbScript.sessionTests + 1;
         //testCanvas.SetActive(false);
     }
@@ -3661,40 +3661,40 @@ public class Test : MonoBehaviour
     void UpdateScores()
     {
         //YEAR 1
-        if(glbScr.appTestID == "M1EQ_T1")
+        if(glbScr.appTestID == "M1_T1")
         {
             if (score > glbScr.M1EQ_T1_Score){
                 glbScr.M1EQ_T1_Score = score;
             }
-        }else if (glbScr.appTestID == "M1EQ_T2")
+        }else if (glbScr.appTestID == "M1_T2")
         {
             if (score > glbScr.M1EQ_T2_Score)
             {
                 glbScr.M1EQ_T2_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M1EQ_T3")
+        else if (glbScr.appTestID == "M1_T3")
         {
             if (score > glbScr.M1EQ_T3_Score)
             {
                 glbScr.M1EQ_T3_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M1EQ_T4")
+        else if (glbScr.appTestID == "M1_T4")
         {
             if (score > glbScr.M1EQ_T4_Score)
             {
                 glbScr.M1EQ_T4_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M1EQ_T5")
+        else if (glbScr.appTestID == "M1_T5")
         {
             if (score > glbScr.M1EQ_T5_Score)
             {
                 glbScr.M1EQ_T5_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M1EQ_T6")
+        else if (glbScr.appTestID == "M1_T6")
         {
             if (score > glbScr.M1EQ_T6_Score)
             {
@@ -3703,168 +3703,168 @@ public class Test : MonoBehaviour
         }
 
         //YEAR 2
-        else if (glbScr.appTestID == "M3EQ_T1")
+        else if (glbScr.appTestID == "M3_T1")
         {
             if (score > glbScr.M3EQ_T1_Score)
             {
                 glbScr.M3EQ_T1_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T2")
+        else if (glbScr.appTestID == "M3_T2")
         {
             if (score > glbScr.M3EQ_T2_Score)
             {
                 glbScr.M3EQ_T2_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T3")
+        else if (glbScr.appTestID == "M3_T3")
         {
             if (score > glbScr.M3EQ_T3_Score)
             {
                 glbScr.M3EQ_T3_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T4")
+        else if (glbScr.appTestID == "M3_T4")
         {
             if (score > glbScr.M3EQ_T14_Score)
             {
                 glbScr.M3EQ_T4_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T5")
+        else if (glbScr.appTestID == "M3_T5")
         {
             if (score > glbScr.M3EQ_T5_Score)
             {
                 glbScr.M3EQ_T5_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T6")
+        else if (glbScr.appTestID == "M3_T6")
         {
             if (score > glbScr.M3EQ_T6_Score)
             {
                 glbScr.M3EQ_T6_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T7")
+        else if (glbScr.appTestID == "M3_T7")
         {
             if (score > glbScr.M3EQ_T7_Score)
             {
                 glbScr.M3EQ_T7_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T8")
+        else if (glbScr.appTestID == "M3_T8")
         {
             if (score > glbScr.M3EQ_T8_Score)
             {
                 glbScr.M3EQ_T8_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T9")
+        else if (glbScr.appTestID == "M3_T9")
         {
             if (score > glbScr.M3EQ_T9_Score)
             {
                 glbScr.M3EQ_T9_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T10")
+        else if (glbScr.appTestID == "M3_T10")
         {
             if (score > glbScr.M3EQ_T10_Score)
             {
                 glbScr.M3EQ_T10_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T11")
+        else if (glbScr.appTestID == "M3_T11")
         {
             if (score > glbScr.M3EQ_T11_Score)
             {
                 glbScr.M3EQ_T11_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T12")
+        else if (glbScr.appTestID == "M3_T12")
         {
             if (score > glbScr.M3EQ_T12_Score)
             {
                 glbScr.M3EQ_T12_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T13")
+        else if (glbScr.appTestID == "M3_T13")
         {
             if (score > glbScr.M3EQ_T13_Score)
             {
                 glbScr.M3EQ_T13_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T14")
+        else if (glbScr.appTestID == "M3_T14")
         {
             if (score > glbScr.M3EQ_T14_Score)
             {
                 glbScr.M3EQ_T14_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T15")
+        else if (glbScr.appTestID == "M3_T15")
         {
             if (score > glbScr.M3EQ_T15_Score)
             {
                 glbScr.M3EQ_T15_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T16")
+        else if (glbScr.appTestID == "M3_T16")
         {
             if (score > glbScr.M3EQ_T16_Score)
             {
                 glbScr.M3EQ_T16_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T17")
+        else if (glbScr.appTestID == "M3_T17")
         {
             if (score > glbScr.M3EQ_T17_Score)
             {
                 glbScr.M3EQ_T17_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T18")
+        else if (glbScr.appTestID == "M3_T18")
         {
             if (score > glbScr.M3EQ_T18_Score)
             {
                 glbScr.M3EQ_T18_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T19")
+        else if (glbScr.appTestID == "M3_T19")
         {
             if (score > glbScr.M3EQ_T19_Score)
             {
                 glbScr.M3EQ_T19_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T20")
+        else if (glbScr.appTestID == "M3_T20")
         {
             if (score > glbScr.M3EQ_T20_Score)
             {
                 glbScr.M3EQ_T20_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T21")
+        else if (glbScr.appTestID == "M3_T21")
         {
             if (score > glbScr.M3EQ_T21_Score)
             {
                 glbScr.M3EQ_T21_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T22")
+        else if (glbScr.appTestID == "M3_T22")
         {
             if (score > glbScr.M3EQ_T22_Score)
             {
                 glbScr.M3EQ_T22_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T23")
+        else if (glbScr.appTestID == "M3_T23")
         {
             if (score > glbScr.M3EQ_T23_Score)
             {
                 glbScr.M3EQ_T23_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M3EQ_T24")
+        else if (glbScr.appTestID == "M3_T24")
         {
             if (score > glbScr.M3EQ_T24_Score)
             {
@@ -3873,14 +3873,14 @@ public class Test : MonoBehaviour
         }
 
         //YEAR 3
-        else if (glbScr.appTestID == "M5EQ_T1")
+        else if (glbScr.appTestID == "M5_T1")
         {
             if (score > glbScr.M5EQ_T1_Score)
             {
                 glbScr.M5EQ_T1_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T2")
+        else if (glbScr.appTestID == "M5_T2")
         {
             if (score > glbScr.M5EQ_T2_Score)
             {
@@ -3894,147 +3894,147 @@ public class Test : MonoBehaviour
                 glbScr.M5EQ_T3_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T4")
+        else if (glbScr.appTestID == "M5_T4")
         {
             if (score > glbScr.M5EQ_T4_Score)
             {
                 glbScr.M5EQ_T4_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T5")
+        else if (glbScr.appTestID == "M5_T5")
         {
             if (score > glbScr.M5EQ_T5_Score)
             {
                 glbScr.M5EQ_T5_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T6")
+        else if (glbScr.appTestID == "M5_T6")
         {
             if (score > glbScr.M5EQ_T6_Score)
             {
                 glbScr.M5EQ_T6_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T7")
+        else if (glbScr.appTestID == "M5_T7")
         {
             if (score > glbScr.M5EQ_T7_Score)
             {
                 glbScr.M5EQ_T7_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T8")
+        else if (glbScr.appTestID == "M5_T8")
         {
             if (score > glbScr.M5EQ_T8_Score)
             {
                 glbScr.M5EQ_T8_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T9")
+        else if (glbScr.appTestID == "M5_T9")
         {
             if (score > glbScr.M5EQ_T9_Score)
             {
                 glbScr.M5EQ_T9_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T10")
+        else if (glbScr.appTestID == "M5_T10")
         {
             if (score > glbScr.M5EQ_T10_Score)
             {
                 glbScr.M5EQ_T10_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T11")
+        else if (glbScr.appTestID == "M5_T11")
         {
             if (score > glbScr.M5EQ_T11_Score)
             {
                 glbScr.M5EQ_T11_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T12")
+        else if (glbScr.appTestID == "M5_T12")
         {
             if (score > glbScr.M5EQ_T12_Score)
             {
                 glbScr.M5EQ_T12_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T13")
+        else if (glbScr.appTestID == "M5_T13")
         {
             if (score > glbScr.M5EQ_T13_Score)
             {
                 glbScr.M5EQ_T13_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T14")
+        else if (glbScr.appTestID == "M5_T14")
         {
             if (score > glbScr.M5EQ_T14_Score)
             {
                 glbScr.M5EQ_T14_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T15")
+        else if (glbScr.appTestID == "M5_T15")
         {
             if (score > glbScr.M5EQ_T15_Score)
             {
                 glbScr.M5EQ_T15_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T16")
+        else if (glbScr.appTestID == "M5_T16")
         {
             if (score > glbScr.M5EQ_T16_Score)
             {
                 glbScr.M5EQ_T16_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T17")
+        else if (glbScr.appTestID == "M5_T17")
         {
             if (score > glbScr.M5EQ_T17_Score)
             {
                 glbScr.M5EQ_T17_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T18")
+        else if (glbScr.appTestID == "M5_T18")
         {
             if (score > glbScr.M5EQ_T18_Score)
             {
                 glbScr.M5EQ_T18_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T19")
+        else if (glbScr.appTestID == "M5_T19")
         {
             if (score > glbScr.M5EQ_T19_Score)
             {
                 glbScr.M5EQ_T19_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T20")
+        else if (glbScr.appTestID == "M5_T20")
         {
             if (score > glbScr.M5EQ_T20_Score)
             {
                 glbScr.M5EQ_T20_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T21")
+        else if (glbScr.appTestID == "M5_T21")
         {
             if (score > glbScr.M5EQ_T21_Score)
             {
                 glbScr.M5EQ_T21_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T22")
+        else if (glbScr.appTestID == "M5_T22")
         {
             if (score > glbScr.M5EQ_T22_Score)
             {
                 glbScr.M5EQ_T22_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T23")
+        else if (glbScr.appTestID == "M5_T23")
         {
             if (score > glbScr.M5EQ_T23_Score)
             {
                 glbScr.M5EQ_T23_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M5EQ_T24")
+        else if (glbScr.appTestID == "M5_T24")
         {
             if (score > glbScr.M5EQ_T24_Score)
             {

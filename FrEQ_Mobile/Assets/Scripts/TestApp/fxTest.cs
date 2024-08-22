@@ -1211,42 +1211,42 @@ public class fxTest : MonoBehaviour
     void TestLevelCheck()
     {
 
-        if (glbScr.appTestID == "Y1EQ_M1" || glbScr.globalTestId == "M1T1")
+        if (glbScr.appTestID == "M2_T1" || glbScr.globalTestId == "M1T1")
         {
             if (netGlbScr.testLevel <= 1)
             {
                 netGlbScr.testLevel = 2;
             }
         }
-        else if (glbScr.appTestID == "Y1EQ_M2" || glbScr.globalTestId == "M1T2")
+        else if (glbScr.appTestID == "M2_T2" || glbScr.globalTestId == "M1T2")
         {
             if (netGlbScr.testLevel <= 2)
             {
                 netGlbScr.testLevel = 3;
             }
         }
-        else if (glbScr.appTestID == "Y1EQ_M3" || glbScr.globalTestId == "M1T3")
+        else if (glbScr.appTestID == "M2_T3" || glbScr.globalTestId == "M1T3")
         {
             if (netGlbScr.testLevel <= 3)
             {
                 netGlbScr.testLevel = 4;
             }
         }
-        else if (glbScr.appTestID == "Y1EQ_M4" || glbScr.globalTestId == "M2T1")
+        else if (glbScr.appTestID == "M2_T4" || glbScr.globalTestId == "M2T1")
         {
             if (netGlbScr.testLevel <= 4)
             {
                 netGlbScr.testLevel = 5;
             }
         }
-        else if (glbScr.appTestID == "Y1EQ_M5" || glbScr.globalTestId == "M2T2")
+        else if (glbScr.appTestID == "M2_T5" || glbScr.globalTestId == "M2T2")
         {
             if (netGlbScr.testLevel <= 5)
             {
                 netGlbScr.testLevel = 6;
             }
         }
-        else if (glbScr.appTestID == "Y1EQ_M6" || glbScr.globalTestId == "M2T3")
+        else if (glbScr.appTestID == "M2_T6" || glbScr.globalTestId == "M2T3")
         {
             if (netGlbScr.testLevel <= 6)
             {
@@ -1255,21 +1255,21 @@ public class fxTest : MonoBehaviour
         }
 
         //YEAR 2
-        else if (glbScr.appTestID == "Y2EQ_M1" || glbScr.globalTestId == "M3T1")
+        else if (glbScr.appTestID == "Y2_M1" || glbScr.globalTestId == "M3T1")
         {
             if (netGlbScr.testLevel <= 7)
             {
                 netGlbScr.testLevel = 8;
             }
         }
-        else if (glbScr.appTestID == "Y2EQ_M2" || glbScr.globalTestId == "M3T2")
+        else if (glbScr.appTestID == "Y2_M2" || glbScr.globalTestId == "M3T2")
         {
             if (netGlbScr.testLevel <= 8)
             {
                 netGlbScr.testLevel = 9;
             }
         }
-        else if (glbScr.appTestID == "Y2EQ_M3" || glbScr.globalTestId == "M3T3")
+        else if (glbScr.appTestID == "Y2_M3" || glbScr.globalTestId == "M3T3")
         {
             if (netGlbScr.testLevel <= 9)
             {
@@ -1666,42 +1666,42 @@ public class fxTest : MonoBehaviour
     void UpdateScores()
     {
         //YEAR 1
-        if (glbScr.appTestID == "M2FX_T1")
+        if (glbScr.appTestID == "M2_T1")
         {
             if (score > glbScr.M2FX_T1_Score)
             {
                 glbScr.M2FX_T1_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M2FX_T2")
+        else if (glbScr.appTestID == "M2_T2")
         {
             if (score > glbScr.M2FX_T2_Score)
             {
                 glbScr.M2FX_T2_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M2FX_T3")
+        else if (glbScr.appTestID == "M2_T3")
         {
             if (score > glbScr.M2FX_T3_Score)
             {
                 glbScr.M2FX_T3_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M2FX_T4")
+        else if (glbScr.appTestID == "M2_T4")
         {
             if (score > glbScr.M2FX_T4_Score)
             {
                 glbScr.M2FX_T4_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M2FX_T5")
+        else if (glbScr.appTestID == "M2_T5")
         {
             if (score > glbScr.M2FX_T5_Score)
             {
                 glbScr.M2FX_T5_Score = score;
             }
         }
-        else if (glbScr.appTestID == "M2FX_T6")
+        else if (glbScr.appTestID == "M2_T6")
         {
             if (score > glbScr.M2FX_T6_Score)
             {

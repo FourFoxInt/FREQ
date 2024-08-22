@@ -27,6 +27,7 @@ public class GetData : MonoBehaviour
     List<int> y1eqt4scores = new List<int>();
     List<int> y1eqt5scores = new List<int>();
     List<int> y1eqt6scores = new List<int>();
+
     List<int> y2eqt1scores = new List<int>();
     List<int> y2eqt2scores = new List<int>();
     List<int> y2eqt3scores = new List<int>();

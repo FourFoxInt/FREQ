@@ -273,7 +273,7 @@ public class EqExam : MonoBehaviour
         }
         if (glbScr.anserBtnsType == "10")
         {
-            lowBtn.SetActive(true); midBtn.SetActive(false); highBtn.SetActive(false);
+            lowBtn.SetActive(false); midBtn.SetActive(false); highBtn.SetActive(false);
             h31Btn.SetActive(true); h40Btn.SetActive(false); h50Btn.SetActive(false);
             h63Btn.SetActive(true); h80Btn.SetActive(false); h100Btn.SetActive(false);
             h125Btn.SetActive(true); h160Btn.SetActive(false); h200Btn.SetActive(false);
